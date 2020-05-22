@@ -1,4 +1,4 @@
-package com.ayser.simplefactory;
+package com.ayser.simplefactory.first;
 
 import java.util.Scanner;
 
@@ -19,8 +19,9 @@ public class Main {
             String opt = scanner.next();
             System.out.println("请输入第二个数字：");
             double num2 = scanner.nextDouble();
-            if(num2 != 0.0){
+            if(num2 == 0.0){
                 System.out.println("除数不能为0");
+                return;
             }
             switch(opt){
                 case "+":
@@ -43,3 +44,10 @@ public class Main {
         }
     }
 }
+/**
+ * 这样设计，存在的问题：实际上解决问题的思维，依然是过程化的思维，第一步应该做什么，第二步应该做什么，
+ * 以面向对象的思想来实现叻？应该如何实现？  见示例 Main2.java
+ *
+ *
+ *
+ * */
