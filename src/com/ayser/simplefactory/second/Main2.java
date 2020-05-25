@@ -35,7 +35,7 @@ public class Main2 {
 class Operator{
 
     int getResult(int num1, int num2, String opt){
-        int result;
+        int result = 0;
         switch(opt){
             case "+":
                 result = num1 + num2;
